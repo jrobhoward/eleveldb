@@ -55,7 +55,7 @@ case "$1" in
 
     get-deps)
         if [ ! -d leveldb ]; then
-            git clone git://github.com/basho/leveldb
+            git clone git://github.com/jrobhoward/leveldb
             (cd leveldb && git checkout $LEVELDB_VSN)
         fi
         ;;
@@ -75,7 +75,7 @@ case "$1" in
         export LEVELDB_VSN="$LEVELDB_VSN"
 
         if [ ! -d leveldb ]; then
-            git clone git://github.com/basho/leveldb
+            git clone git://github.com/jrobhoward/leveldb
             (cd leveldb && git checkout $LEVELDB_VSN)
         fi
 
